@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style_pages.css">
+    <title>Human rights</title>
+</head>
+<body>
+    <section class="bg">
+        <h2>Amnesty International</h2>
+        <span class="SkewedOne"></span>
+        <span class="SkewedTwo"></span>
+    </section>
+    <section>
+        <h2>Amnesty</h2>
+        <p>Amnesty International - an international non-governmental organization whose aim is to prevent human rights violations through all peaceful civil actions - from organizing the writing of letters to governments of countries that violate these laws, through publishing information about such violations, to real financial and legal aid for victims. The 1977 Nobel Peace Prize for “contributing to strengthening the foundations of freedom, justice, and thus peace throughout the world.” Amnesty International funds its activities primarily through membership fees and donations from individuals and companies. The principles of Amnesty International's operation are the universality and indivisibility of human rights, impartiality and independence, international solidarity and effective action for the benefit of specific people whose rights have been violated. The organization is politically and financially independent. [Footnote needed] In many countries (mainly those that often repress their citizens) it is accused of supporting the USA and Western Europe and promoting their ideas. Amnesty protests against the torture and detention of people by the US in Guantánamo. Amnesty International says it currently supports over 7 million people in 150 countries around the world. Amnesty International's International Secretariat is based in London, but the organization has regional offices in Africa, America, Asia, Europe and the Middle East (including Johannesburg, Dakar, Nairobi, Mexico, Bangkok, Hong Kong, Beirut, Brussels). Until the end of 2009, the Secretary General of Amnesty International was Irene Khan, her successor was Salil Shetty, and since 2018 Kumi Naidoo has held this position. The unofficial anthem of the organization is the song "One" by U2</p>
+            <a href="/index.html">
+                <button class="przycisk">Back</button>
+            </a>
+    </section>
+    <script>
+        const SkewedOne = document.querySelector('.SkewedOne');
+        const SkewedTwo = document.querySelector('.SkewedTwo');
+        window.addEventListener('scroll',function(){
+            const value1 = -15 + window.scrollY/45;
+            const value2 = 15 + window.scrollY/-45;
+            SkewedOne.style.transform = "skewY(" + value1 + "deg)"
+            SkewedTwo.style.transform = "skewY(" + value2 + "deg)"
+        })
+
+    </script>
+</body>
+</html>

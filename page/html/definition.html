@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style_pages.css">
+    <title>Human rights</title>
+</head>
+<body>
+    <section class="bg">
+        <h2>Definition</h2>
+        <span class="SkewedOne"></span>
+        <span class="SkewedTwo"></span>
+    </section>
+    <section>
+        <h2>Definition</h2>
+        <p>Human rights are rights inherent to all human beings, regardless of race, sex, nationality, ethnicity, language, religion, or any other status. Human rights include the right to life and liberty, freedom from slavery and torture, freedom of opinion and expression, the right to work and education, and many more.  Everyone is entitled to these rights, without discrimination.International human rights law lays down the obligations of Governments to act in certain ways or to refrain from certain acts, in order to promote and protect human rights and fundamental freedoms of individuals or groups.One of the great achievements of the United Nations is the creation of a comprehensive body of human rights law—a universal and internationally protected code to which all nations can subscribe and all people aspire. The United Nations has defined a broad range of internationally accepted rights, including civil, cultural, economic, political and social rights. It has also established mechanisms to promote and protect these rights and to assist states in carrying out their responsibilities.</p>
+            <a href="/index.html">
+                <button class="przycisk">Back</button>
+            </a>
+        </section>
+    <script>
+        const SkewedOne = document.querySelector('.SkewedOne');
+        const SkewedTwo = document.querySelector('.SkewedTwo');
+        window.addEventListener('scroll',function(){
+            const value1 = -15 + window.scrollY/45;
+            const value2 = 15 + window.scrollY/-45;
+            SkewedOne.style.transform = "skewY(" + value1 + "deg)"
+            SkewedTwo.style.transform = "skewY(" + value2 + "deg)"
+        })
+
+    </script>
+</body>
+</html>
